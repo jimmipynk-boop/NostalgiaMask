@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NostalgiaMask T-Shirts, Gifts and More</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-pink': '#FF1493',
+                        'brand-orange': '#FF7F50',
+                        'brand-dark': '#111111',
+                    },
+                    fontFamily: {
+                        '80s': ['Righteous', 'cursive'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .grid-bg {
+            background-color: #111111;
+            background-image: 
+                linear-gradient(rgba(255, 127, 80, 0.15) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 20, 147, 0.15) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #FF1493, #FF7F50);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .neon-border {
+            border: 2px solid #FF1493;
+            box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+        }
+        .neon-border:hover {
+            box-shadow: 0 0 20px rgba(255, 127, 80, 0.8);
+            border-color: #FF7F50;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="text-gray-100 font-body grid-bg min-h-screen flex flex-col">
+
+    <!-- Navigation -->
+    <nav class="bg-brand-dark bg-opacity-95 sticky top-0 z-50 border-b border-brand-pink">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="flex-shrink-0 flex items-center">
+                    <img src="logo.png" alt="NostalgiaMask Logo" class="h-16 w-auto object-contain">
+                </a>
+                <div class="hidden md:flex space-x-6 font-80s text-sm lg:text-base tracking-wider">
+                    <a href="#collections" class="text-white hover:text-brand-orange transition">Collections</a>
+                    <a href="#drops" class="text-brand-pink hover:text-white transition">Limited Drops</a>
+                    <a href="#story" class="text-white hover:text-brand-pink transition">Our Story</a>
+                    <a href="#contact" class="text-white hover:text-brand-orange transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-20 pb-12 text-center px-4">
+        <div class="inline-block bg-brand-dark text-brand-orange font-bold tracking-widest uppercase text-sm px-6 py-2 rounded-full mb-8 neon-border">
+            Online Store Coming Soon
+        </div>
+        <h1 class="font-80s text-5xl md:text-7xl mb-4 gradient-text uppercase tracking-wide">
+            NostalgiaMask
+        </h1>
+        <h2 class="font-80s text-2xl md:text-4xl text-white mb-6 uppercase tracking-wide">
+            T-Shirts, Gifts and More
+        </h2>
+        <p class="mt-2 text-xl md:text-2xl font-bold tracking-widest text-brand-orange uppercase max-w-3xl mx-auto">
+            Remembering the Past to Secure Our Future
+        </p>
+    </header>
+
+    <!-- Collections Showcase -->
+    <section id="collections" class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Clarification Message -->
+            <div class="text-center mb-12 max-w-3xl mx-auto bg-gray-900 bg-opacity-80 p-6 rounded-lg border border-brand-pink">
+                <p class="text-lg text-gray-200 mb-2">
+                    The items below are just a few examples of what we do. 
+                </p>
+                <p class="text-lg text-gray-200">
+                    <strong class="text-brand-pink text-xl">Custom orders are available!</strong> We are currently taking orders via email. Head over to our <a href="https://www.instagram.com/jimmipynk/" target="_blank" class="text-brand-orange hover:text-white underline transition">Instagram</a> to see tons of more examples, limited drops, and daily creations.
+                </p>
+            </div>
+            
+            <!-- 6 Core Categories Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Category 1: 80s and 90s Candles -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden neon-border transition duration-300 flex flex-col">
+                    <div class="h-64 bg-black relative">
+                        <img src="80.png" alt="80s and 90s Candles" class="w-full h-full object-contain absolute inset-0 p-2">
+                    </div>
+                    <div class="p-5 border-t border-gray-800 flex-grow bg-brand-dark">
+                        <h3 class="font-80s text-2xl text-white mb-1 tracking-wide">80s & 90s Candles</h3>
+                        <p class="text-gray-400 text-sm">Scents that take you straight back to the best decades.</p>
+                    </div>
+                </div>
+
+                <!-- Category 2: Youngstown City Schools -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden neon-border transition duration-300 flex flex-col">
+                    <div class="h-64 bg-black relative">
+                        <img src="local.png" alt="Youngstown City Schools Merch" class="w-full h-full object-contain absolute inset-0 p-2">
+                    </div>
+                    <div class="p-5 border-t border-gray-800 flex-grow bg-brand-dark">
+                        <h3 class="font-80s text-2xl text-white mb-1 tracking-wide">Youngstown City Schools</h3>
+                        <p class="text-gray-400 text-sm">Alumni gear for Woodrow Wilson, South High, East High, and more.</p>
+                    </div>
+                </div>
+
+                <!-- Category 3: Local History -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden neon-border transition duration-300 flex flex-col">
+                    <div class="h-64 bg-black relative">
+                        <img src="idora.png" alt="Local History" class="w-full h-full object-contain absolute inset-0 p-2">
+                    </div>
+                    <div class="p-5 border-t border-gray-800 flex-grow bg-brand-dark">
+                        <h3 class="font-80s text-2xl text-white mb-1 tracking-wide">Local History</h3>
+                        <p class="text-gray-400 text-sm">Celebrating the culture and landmarks that raised us.</p>
+                    </div>
+                </div>
+
+                <!-- Category 4: Christmas Past -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden neon-border transition duration-300 flex flex-col">
+                    <div class="h-64 bg-black relative">
+                        <img src="orn.png" alt="Christmas Past" class="w-full h-full object-contain absolute inset-0 p-2">
+                    </div>
+                    <div class="p-5 border-t border-gray-800 flex-grow bg-brand-dark">
+                        <h3 class="font-80s text-2xl text-white mb-1 tracking-wide">Christmas Past</h3>
+                        <p class="text-gray-400 text-sm">Retro holiday nostalgia and custom ornaments.</p>
+                    </div>
+                </div>
+
+                <!-- Category 5: The New Nostalgia -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden neon-border transition duration-300 flex flex-col">
+                    <div class="h-64 bg-black relative">
+                        <img src="born.png" alt="The New Nostalgia" class="w-full h-full object-contain absolute inset-0 p-2">
+                    </div>
+                    <div class="p-5 border-t border-gray-800 flex-grow bg-brand-dark">
+                        <h3 class="font-80s text-2xl text-brand-pink mb-1 tracking-wide">The New Nostalgia</h3>
+                        <p class="text-brand-orange text-sm font-bold tracking-widest uppercase">Limited Edition Drops</p>
+                    </div>
+                </div>
+
+                <!-- Category 6: Reunions and Customs -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden neon-border transition duration-300 flex flex-col">
+                    <div class="h-64 bg-black relative">
+                        <img src="reunion.png" alt="Reunions and Customs" class="w-full h-full object-contain absolute inset-0 p-2">
+                    </div>
+                    <div class="p-5 border-t border-gray-800 flex-grow bg-brand-dark">
+                        <h3 class="font-80s text-2xl text-white mb-1 tracking-wide">Reunions & Customs</h3>
+                        <p class="text-gray-400 text-sm">Bespoke merchandise and bulk items for your special events.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: Limited Edition Drops -->
+    <section id="drops" class="py-16 bg-brand-dark bg-opacity-70 border-y border-brand-orange my-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-80s text-4xl md:text-5xl gradient-text uppercase tracking-wide mb-3">Limited Edition Drops</h2>
+                <p class="text-brand-orange font-bold uppercase tracking-widest text-sm">Monthly Collectibles & Exclusive Releases</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- September Drop -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden neon-border transition duration-300 flex flex-col">
+                    <div class="h-56 bg-black relative">
+                        <img src="sept.png" alt="September Drop" class="w-full h-full object-contain absolute inset-0 p-2">
+                    </div>
+                    <div class="p-4 border-t border-gray-800 flex-grow bg-brand-dark text-center">
+                        <h3 class="font-80s text-xl text-white tracking-wide">September Drop</h3>
+                    </div>
+                </div>
+
+                <!-- October Drop -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden neon-border transition duration-300 flex flex-col">
+                    <div class="h-56 bg-black relative">
+                        <img src="oct.png" alt="October Drop" class="w-full h-full object-contain absolute inset-0 p-2">
+                    </div>
+                    <div class="p-4 border-t border-gray-800 flex-grow bg-brand-dark text-center">
+                        <h3 class="font-80s text-xl text-white tracking-wide">October Drop</h3>
+                    </div>
+                </div>
+
+                <!-- November Drop -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden neon-border transition duration-300 flex flex-col">
+                    <div class="h-56 bg-black relative">
+                        <img src="nov.png" alt="November Drop" class="w-full h-full object-contain absolute inset-0 p-2">
+                    </div>
+                    <div class="p-4 border-t border-gray-800 flex-grow bg-brand-dark text-center">
+                        <h3 class="font-80s text-xl text-white tracking-wide">November Drop</h3>
+                    </div>
+                </div>
+
+                <!-- Special / Pizza Drop -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden neon-border transition duration-300 flex flex-col">
+                    <div class="h-56 bg-black relative">
+                        <img src="pizza.png" alt="Special Edition Drop" class="w-full h-full object-contain absolute inset-0 p-2">
+                    </div>
+                    <div class="p-4 border-t border-gray-800 flex-grow bg-brand-dark text-center">
+                        <h3 class="font-80s text-xl text-brand-pink tracking-wide">Special Edition</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="story" class="py-16 bg-black bg-opacity-60 border-b border-brand-pink">
+        <div class="max-w-4xl mx-auto px-6 sm:px-8 text-center">
+            <h2 class="font-80s text-3xl md:text-4xl text-brand-orange mb-8 tracking-wide">How It Started</h2>
+            <div class="space-y-6 text-gray-300 text-lg leading-relaxed text-left md:text-center font-medium">
+                <p>
+                    NostalgiaMask was born in 2020 out of a desire to bring a little whimsy to a dark time. What started as custom face masks featuring beloved 80s icons like Strawberry Shortcake and Transformers quickly grew into a broader passion for celebrating the pop culture that raised us.
+                </p>
+                <p>
+                    As the world opened back up, so did our vision. We expanded into a full boutique experience, offering custom shirts, hand-poured candles, glassware, holiday ornaments, and bespoke accessories like fans and umbrellas.
+                </p>
+                <p>
+                    In 2024, our focus took a meaningful turn homeward as we began honoring the rich history of the forgotten Youngstown City Schools. By 2026, NostalgiaMask embraced a fully local lens, officially stepping out to vend for the first time at the 4th Annual All City Alumni Picnic for Youngstown Public and Parochial High Schools in August. Today, we continue our mission to celebrate the past, the culture, and the community that shaped us.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-black py-16 border-t-4 border-brand-pink text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h3 class="font-80s text-3xl text-white mb-6">Let's Connect & Create</h3>
+            <p class="text-gray-400 mb-8 max-w-md mx-auto">Our online store is on the way. Until then, drop an email to start a custom order, or follow the social feeds to see more examples.</p>
+            
+            <a href="mailto:JimmiPynk@gmail.com" class="inline-block bg-transparent text-brand-orange font-bold py-3 px-8 mb-10 rounded uppercase tracking-wider neon-border hover:bg-brand-orange hover:text-white transition">
+                Email JimmiPynk@gmail.com
+            </a>
+
+            <!-- Social Media Links -->
+            <div class="flex justify-center space-x-8 mb-8">
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/jimmipynk/" target="_blank" class="text-gray-400 hover:text-brand-pink transition transform hover:scale-110">
+                    <span class="sr-only">Instagram</span>
+                    <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@jimmipynk" target="_blank" class="text-gray-400 hover:text-brand-orange transition transform hover:scale-110">
+                    <span class="sr-only">TikTok</span>
+                    <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.12-3.44-3.17-3.61-5.46-.07-1.55.28-3.1 1.07-4.4 1.16-1.92 3.19-3.23 5.37-3.46v4.11c-1.36.17-2.61.94-3.32 2.08-.82 1.25-.85 2.94-.13 4.22.9 1.5 2.87 2.21 4.5 1.52 1.1-.48 1.89-1.5 2.05-2.7.06-.57.06-1.14.05-1.71V.02h4.05z" />
+                    </svg>
+                </a>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/jameka.dobbs/" target="_blank" class="text-gray-400 hover:text-brand-pink transition transform hover:scale-110">
+                    <span class="sr-only">Facebook</span>
+                    <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+            
+            <p class="mt-8 text-sm text-gray-600 font-bold tracking-widest uppercase">
+                &copy; 2026 NostalgiaMask. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
